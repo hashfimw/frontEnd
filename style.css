@@ -1,69 +1,74 @@
-p {
-    color: blueviolet;
-}
-
-.mobil { 
-    color: aquamarine;
-}
-.judulA {
-    text-align: center;
-    text-decoration: solid;
-    text-transform: uppercase;
-    text-decoration:underline
-}
-
-#bmw {
-    text-align: center;
-    color: cadetblue;
-    /* color : #fff */
-}
-#toyota {
-    text-align: center;
-    color: chocolate;
-}
-
 body {
-    /* background : linear-gradient(90deg, khaki, white, rgb(224, 190, 126)) */
-    background : url(https://wallpapercave.com/wp/wp2757834.gif)
+    margin: 0px;
+    padding: 0px;
+}
+.register {
+    height: 40px;
+    width: 100px;
+    background-color: teal;
+    color: white;
+    position: relative;
+    /* left: 100px;
+    top: 100px;
+    bottom: 100px; */
 }
 
-.text {
-    color: rgb(0, 0, 0);
-    font-family: monospace;
-    text-transform: uppercase;
-    text-decoration:solid;
-    text-align: center;
-}
-
-.konten {
-    background-color: antiquewhite;
-    width: 200px;
-    height: 300px;
-    padding: 10px;
-    align-content: center;
-    margin: 100px;
-    border: 10px dotted black;
+.promo {
+    position: absolute;
+    background-color: yellow;
+    padding: 2px 10px;
+    color: black;
+    border: 1px solid green;
     border-radius: 20px;
+    rotate: 40deg;
+    top: -5px;
+    right: -25px;
 }
 
-.text::first-letter{
-    font-size: 35px;
-    /* pseudo element untuk mengedit atau mengubah spesifik element */
+.kontak {
+    height: 70px;
+    width: 70px;
+    background-color: greenyellow;
+    color: black;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
 }
-.text:hover::first-letter {
-    color: red;
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
 }
 
-.M:hover:hover{
-    color: red;
+.navbar2 {
+    height: 30px;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;
+    align-content: center;
+    position: sticky;  /* posisi sama seperti fixed tapi bisa di atur mau dimana fix nya*/
+    top: 80px;
 }
 
-
-.konten:hover{
-    background-color: cornflowerblue;
-    cursor: pointer;
+/* tablet */
+@media screen and (max-width: 768px) {
+    .navbar {
+        background-color: pink;
+    }
 }
-
-.lorem::first-line{
-    color: red;
+/* mobile */
+@media screen and (max-width: 480px) {
+    .navbar {
+        background-color: cornflowerblue;
+    }
 }
