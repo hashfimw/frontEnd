@@ -1,107 +1,35 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Calculator</title>
-  <style>
-    /* Membuat body halaman memiliki tinggi penuh dan center */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #000000;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Style untuk container kalkulator */
-    .calculator {
-      width: 300px; /* Ukuran kalkulator sedang */
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Style untuk layar kalkulator */
-    .display {
-      width: 95%;
-      height: 50px;
-      background-color: #222;
-      color: #fff;
-      text-align: right;
-      padding: 10px;
-      font-size: 24px;
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
-
-    /* Style untuk tombol */
-    .buttons {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr); /* Membuat grid 4 kolom */
-      gap: 10px;
-    }
-
-    .button {
-      padding: 20px;
-      background-color: lightskyblue;
-      color: white;
-      border: none;
-      font-size: 18px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    .button:hover {
-      background-color: lightblue;
-    }
-
-    .button.operator {
-      background-color: lightslategray;
-    }
-
-    .button.operator:hover {
-      background-color: #e67e22;
-    }
-
-    /* Style khusus untuk tombol "0" yang lebih lebar */
-    .button.zero {
-      grid-column: span 2; /* Membuat tombol "0" lebar 2 kolom */
-    }
-  </style>
+    <title>Calcurator</title>
+    <link rel="stylesheet" href="calculatorstyle.css">
 </head>
 <body>
+    <div class="calculator" id="calcurator" >
+        <input class="display" id="display" disabled/>
+        <div class="buttons">
+            <button class="buttonOp">C</button>
+            <button class="buttonOp">/</button>
+            <button class="buttonOp">-</button>
+            <button class="buttonOp">*</button>
 
-  <div class="calculator">
-    <input class="display" id="display" disabled></input>
-    <div class="buttons">
-      <button class="button operator">C</button>
-      <button class="button operator">±</button>
-      <button class="button operator">%</button>
-      <button class="button operator">/</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="buttonOp">+</button>
 
-      <button class="button">7</button>
-      <button class="button">8</button>
-      <button class="button">9</button>
-      <button class="button operator">*</button>
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="buttonpanjang">=</button>
 
-      <button class="button">4</button>
-      <button class="button">5</button>
-      <button class="button">6</button>
-      <button class="button operator">-</button>
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
 
-      <button class="button">1</button>
-      <button class="button">2</button>
-      <button class="button">3</button>
-      <button class="button operator">+</button>
-
-      <button class="button zero">0</button>
-      <button class="button">.</button>
-      <button class="button operator">=</button>
+            <button class="button">0</button>
+            <button class="button">.</button>
+        </div>
     </div>
-  </div>
-  <script src="calcuratorEx.js"></script>
+    <script src="calculator.js"></script>
 </body>
 </html>
