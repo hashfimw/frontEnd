@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* min-height: 100vh; */
+    background-color: #f4f4f4;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+td {
+    text-align: center;
+    
+}
+th {
+    margin: 4px;
+    
+}
+.table {
+    border: 1px solid black;
+    margin: 5px;
+    border-collapse:collapse;
+    background-color: rgba(255, 162, 80, 0.867);
+    
+}
+
+.imageContainer img {
+    padding: 2px;
+    margin:4px;
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+}

@@ -1,0 +1,69 @@
+p {
+    color: blueviolet;
+}
+
+.mobil { 
+    color: aquamarine;
+}
+.judulA {
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+    text-decoration:underline
+}
+
+#bmw {
+    text-align: center;
+    color: cadetblue;
+    /* color : #fff */
+}
+#toyota {
+    text-align: center;
+    color: chocolate;
+}
+
+body {
+    /* background : linear-gradient(90deg, khaki, white, rgb(224, 190, 126)) */
+    background : url(https://wallpapercave.com/wp/wp2757834.gif)
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration:solid;
+    text-align: center;
+}
+
+.konten {
+    background-color: antiquewhite;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    align-content: center;
+    margin: 100px;
+    border: 10px dotted black;
+    border-radius: 20px;
+}
+
+.text::first-letter{
+    font-size: 35px;
+    /* pseudo element untuk mengedit atau mengubah spesifik element */
+}
+.text:hover::first-letter {
+    color: red;
+}
+
+.M:hover:hover{
+    color: red;
+}
+
+
+.konten:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.lorem::first-line{
+    color: red;
+}
