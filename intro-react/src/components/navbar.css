@@ -1,0 +1,56 @@
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(106, 129, 154);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    box-sizing: border-box;
+    padding: 0 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+
+.navbar p {
+
+    flex:3px;
+}
+.navbar:hover {
+    background-color: lightslategray;
+}
+.navitem {
+    display: flex;
+    gap: 50px;
+}
+
+.navitem a{
+    color: whitesmoke;
+}
+
+.navitem a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(0, -2px);
+}
+ 
+h1 {
+    text-align: center;
+}
+
+.button {
+    text-align: justify;
+    color:black;
+}
+
+.button :hover{
+    background-color: rgb(96, 132, 169);
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+}
+
+.logo {
+    height: 100px;
+}
