@@ -1,6 +1,7 @@
 import "./style.css";
 import "../src/assets/backgroundhero.jpg";
 import { TypeAnimation } from "react-type-animation";
+import backgroundImage from "../src/assets/backgroundhero.jpg";
 
 function Hero() {
   const scrollToAbout = () => {
@@ -11,28 +12,34 @@ function Hero() {
   };
 
   return (
-    <div>
-      <div className="bg-opacity-60 hero bg-base-200 ">
-        <img src="../src/assets/backgroundhero.jpg" alt="background" />
+    <div
+      id="hero-section"
+      className="flex items-center justify-center bg-center bg-cover h-screen"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
+      <div>
         <div className="hero-center text-justify">
-          <div className="max-w-md">
-            <h1 className="text-8xl font-light animate-pulse">Hello</h1>
-
+          <div className="max-w-md text-right">
+            <h1 className="text-8xl font-light animate-pulse text-justify text-white">
+              Hi.
+            </h1>
             <TypeAnimation
               sequence={[
-                "I'm Hashfi Mawarid, a Web Developer.",
                 1000,
-                "",
-                300, // Menunggu 1 detik sebelum memulai ulang
+                "I'm Hashfi Mawarid, a Web Des***n.",
+                700,
+                "I'm Hashfi Mawarid, a Web Developer.",
               ]}
               speed={50} // Kecepatan mengetik dalam ms
-              className="text-5xl font-light py-4 text-justify"
+              className="text-6xl font-light py-4 text-left text-white"
               wrapper="h1" // Membungkus dalam elemen h1
-              repeat={Infinity} // Mengulangi animasi
+              repeat={0} // Mengulangi animasi
             />
 
-            <button className="btn" onClick={scrollToAbout}>
-              •Read More•
+            <button className="btn btn-sm font-light" onClick={scrollToAbout}>
+              Read More•
             </button>
           </div>
         </div>

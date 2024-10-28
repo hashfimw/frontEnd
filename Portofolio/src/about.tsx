@@ -1,71 +1,92 @@
 import "./style.css";
 import "../src/assets/avatar.png";
+import "../src/assets/avatar2.png";
+import backgroundImage from "../src/assets/bg4.png";
 
 function About() {
   return (
-    <div id="about-section">
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-black bg-opacity-90">
+    <div
+      id="about-section"
+      className="flex items-center justify-center bg-center bg-cover h-screen"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-opacity-90 items-center justify-items-center">
         <li>
-          <div className="timeline-middle mt-20 pt-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="white"
-              className="h-5 w-5"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
+          <div className="timeline-middle mt-10 md:mt-20 pt-4">
+            {/* Lingkaran kosong */}
+            <div className="h-5 w-5 rounded-full border border-white bg-white"></div>
+          </div>
+          <div className="timeline-end mt-0 mb-10 md:mb-20 md:ml-10 mr-20">
+            <time className="font-light font-sans text-2xl md:text-4xl text-white">
+              About Me
+            </time>
+            <div className="font-light font-sans text-sm md:text-base">
+              I am a passionate individual currently enrolled in a Fullstack Web
+              Development bootcamp at Digital School Technology Purwadhika. I am
+              working towards becoming a skilled Web Developer and, eventually,
+              expanding into Mobile App Development. Though I don't have any
+              projects under my belt yet, I am determined to build a future
+              where I contribute to hundreds or even thousands of projects. I am
+              eager to grow, learn, and take on challenges in the world of
+              development.
+            </div>
+          </div>
+          <div className="timeline-start mb-10 md:mr-40 md:ml-0 md:mt-20 mt-10">
+            <div className="relative">
+              <img
+                src="../src/assets/avatar.png"
+                alt="Avatar"
+                className="rounded-lg shadow-lg h-[240px] md:h-[340px] w-auto max-w-full transition-opacity duration-300 ease-in-out hover:opacity-0"
               />
-            </svg>
+              <img
+                src="../src/assets/avatar2.png"
+                alt="Alternate Avatar"
+                className="absolute inset-0 rounded-lg shadow-lg h-[240px] md:h-[340px] w-auto max-w-full transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100"
+              />
+            </div>
           </div>
-          <div className="timeline-end mt-0 mb-20">
-            <time className="font-light font-sans text-4xl">About Me</time>
-            <div className="font-light text-2xl"></div>I am a passionate
-            individual currently enrolled in a Fullstack Web Development
-            bootcamp at Digital School Technology Purwadhika. I am working
-            towards becoming a skilled Web Developer and, eventually, expanding
-            into Mobile App Development. Though I don't have any projects under
-            my belt yet, I am determined to build a future where I contribute to
-            hundreds or even thousands of projects. I am eager to grow, learn,
-            and take on challenges in the world of development.
-          </div>
-          <div className="timeline-start mb 10 mr-40 ml-0 mt-20">
-            <img
-              src="../src/assets/avatar.png"
-              alt="Avatar"
-              className="rounded-lg shadow-lg h-[340px]"
-            />
-          </div>
-          <hr className="bg-white" />
+          <hr className="bg-white w-3/4 md:w-full" />
         </li>
-        <li>
-          <hr className="bg-white" />
-          <div className="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="white"
-              className="h-5 w-5"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </div>
-          <div className="timeline-end mb-20 mt-0">
-            <time className="font-light text-4xl">Education</time>
-            <div className="text-lg font-black"></div>I am a graduate with a
-            Bachelor's degree in Communication Science from Universitas
-            Pasundan. Currently, I am attending a Fullstack Web Developer
-            bootcamp at Purwadhika, with a strong interest in Front End
-            Development.
-          </div>
 
-          <hr className="bg-white" />
+        {/* Bagian Education */}
+        <li>
+          <hr className="bg-white w-3/4 md:w-full" />
+          <div className="timeline-middle mt-10">
+            <div className="h-5 w-5 rounded-full border border-white bg-white"></div>
+          </div>
+          <div className="timeline-end mb-10 md:mb-20 mt-0 md:ml-10 ml-0 mr-20">
+            <time className="font-light text-2xl md:text-4xl text-white">
+              Education
+            </time>
+            <div className="font-light font-sans text-sm md:text-base">
+              I am a graduate with a Bachelor's degree in Communication Science
+              from Pasundan University. Currently, I am attending a Fullstack
+              Web Developer bootcamp at Purwadhika, with a strong interest in
+              Front End Development.
+            </div>
+          </div>
+          <hr className="bg-white w-3/4 md:w-full" />
+        </li>
+
+        {/* Bagian Contact Me */}
+        <li>
+          <hr className="bg-white w-3/4 md:w-full" />
+          <div className="timeline-middle mt-10">
+            <div className="h-5 w-5 rounded-full border border-white bg-white"></div>
+          </div>
+          <div className="timeline-end mb-10 md:mb-20 mt-0 md:ml-10 ml-0 mr-20">
+            <time className="font-light text-2xl md:text-4xl text-white">
+              Contact Me
+            </time>
+            <div className="font-light font-sans text-sm md:text-base">
+              Feel free to reach out for collaborations or inquiries!
+            </div>
+          </div>
+          <hr className="bg-white w-3/4 md:w-full" />
         </li>
       </ul>
     </div>
