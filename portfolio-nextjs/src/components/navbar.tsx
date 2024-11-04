@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image"; // Impor Image dari Next.js
+import Link from "next/link";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -43,21 +44,21 @@ function Navbar() {
           >
             <li className="flex items-center gap-3">
               <i className="ri-home-smile-line text-2xl md:hidden block"></i>
-              <a href="#home" className="font-regular opacity-75">
+              <Link href={"#home"} className="font-regular opacity-75">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="flex items-center gap-3">
               <i className="ri-user-smile-line text-2xl md:hidden block"></i>
-              <a href="#about" className="font-regular opacity-75">
+              <Link href={"#about"} className="font-regular opacity-75">
                 About Me
-              </a>
+              </Link>
             </li>
             <li className="flex items-center gap-3">
               <i className="ri-mail-unread-line text-2xl md:hidden block"></i>
-              <a href="#contactme" className="font-regular opacity-75">
+              <Link href={"#contactme"} className="font-regular opacity-75">
                 Contact Me
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="Avatar ">

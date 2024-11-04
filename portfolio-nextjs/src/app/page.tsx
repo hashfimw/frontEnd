@@ -1,5 +1,4 @@
 import Navbar from "@/components/navbar";
-import Image from "next/image";
 import Homepage from "./home/page";
 import Footer from "@/components/footer";
 import "remixicon/fonts/remixicon.css";
